@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ismaël Madou Gagi - Portfolio/ Seeking end-of-study internship</title>
+  <title>Ismaël Madou Gagi - Portfolio / Seeking end-of-study internship</title>
   <style>
     /* Global styles */
     body {
@@ -23,169 +23,61 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #2980b9, #f39c12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #2c3e50;
+      padding: 1rem 2rem;
       color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-      position: relative;
-    }
-
-    header img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 1rem;
     }
 
     header img.logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 90px;
+      height: 60px;
       background: white;
       border-radius: 10px;
       padding: 5px;
     }
 
+    header .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 0.5rem;
+    }
+
+    header .center {
+      text-align: center;
+    }
+
     header h1 {
-      font-size: 2.5rem;
       margin: 0;
+      font-size: 2.2rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 1rem auto 0;
-    }
-
-    /* Main container */
-    main {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h2 {
-      border-left: 6px solid #3498db;
-      padding-left: 12px;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-    }
-
-    /* Project cards */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .project-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-8px);
-    }
-
-    .project-card h3 {
-      margin-top: 0;
-      color: #2980b9;
-    }
-
-    .project-card p {
-      margin-bottom: 1rem;
-    }
-
-    .project-link {
-      display: inline-block;
-      background: #3498db;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .project-link:hover {
-      background: #1e6ba8;
-    }
-
-    /* About / Journey */
-    .timeline {
-      border-left: 4px solid #f39c12;
-      padding-left: 1.5rem;
-    }
-
-    .timeline-item {
-      margin-bottom: 2rem;
-    }
-
-    .timeline-item h3 {
-      color: #f39c12;
-    }
-
-    /* Passions */
-    .passions ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .passions li {
-      background: #ecf0f1;
-      padding: 12px 20px;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-
-    /* Contact */
-    .contact-info p {
-      margin: 0.5rem 0;
-    }
-
-    .contact-info a {
-      color: #2980b9;
-      font-weight: bold;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #2c3e50;
-      color: white;
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
-  <header style="display: flex; align-items: center; justify-content: space-between; background: #2c3e50; padding: 1rem 2rem; color: white; position: relative;">
-  
-  <!-- Logo à gauche -->
-  <img src="logo_urca.png" alt="University of Reims Champagne-Ardenne" class="logo" style="height: 60px;">
-  
-  <!-- Section centrale : photo + nom -->
-  <div style="text-align: center;">
-    <img src="IMG.jpg" alt="Profile Photo" class="profile" style="width: 140px; height: 140px; border-radius: 50%; border: 4px solid white; margin-bottom: 0.5rem;">
-    <h1 style="margin: 0; font-size: 2.2rem;">Ismaël Madou</h1>
-    <p style="margin: 0;">Welcome to my GitHub Portfolio 🚀</p>
-  </div>
-  
-  <!-- Logo à droite -->
-  <img src="logo-SEP.png" alt="Master SEP" class="logo" style="height: 60px;">
+  <!-- HEADER -->
+  <header>
+    <!-- Logo à gauche -->
+    <img src="logo_urca.png" alt="University of Reims Champagne-Ardenne" class="logo">
+    
+    <!-- Section centrale : photo + nom -->
+    <div class="center">
+      <img src="IMG.jpg" alt="Profile Photo" class="profile">
+      <h1>Ismaël Madou Gagi</h1>
+      <p>Welcome to my GitHub Portfolio 🚀</p>
+    </div>
+    
+    <!-- Logo à droite -->
+    <img src="logo-SEP.png" alt="Master SEP" class="logo">
+  </header>
 
-</header>
 
 <!-- Phrase d'accroche -->
 <section style="background: #3498db; color: white; padding: 2rem; text-align: center; margin: 2rem 1rem; border-radius: 15px;">
@@ -199,7 +91,7 @@
 
 
   <!-- History / My Story -->
-<section style="background: #f39c12; color: white; padding: 2rem; border-radius: 15px; margin: 2rem 1rem;">
+<section style="background: #3498db; color: white; padding: 2rem; border-radius: 15px; margin: 2rem 1rem;">
   <h2 style="color: white; margin-bottom: 1rem;">My Story</h2>
   <p style="line-height: 1.8; font-size: 1.1rem;">
     <!-- Ici tu mettras ton texte long racontant ton histoire depuis le plus jeune âge -->
@@ -287,7 +179,7 @@
   <h2>Project Demo</h2>
   <p>Watch a quick demo of one of my projects (Restaurant Ordering Interface ) below:</p>
 
-  <iframe src="https://drive.google.com/file/d/1uhJntYkeTNw-g3Wp1EFDlf0qC-yCIJLE/view?usp=drive_link" 
+  <iframe src="https://drive.google.com/file/d/1uhJntYkeTNw-g3Wp1EFDlf0qC-yCIJLE/view?usp=sharing" 
           width="800" 
           height="450" 
           allow="autoplay" 
